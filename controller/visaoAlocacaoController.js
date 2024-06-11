@@ -7,7 +7,7 @@ exports.getVisaoById = (req, res) => {
       } else if (banco) {
         res.json(banco);
       } else {
-        res.status(404).send({ message: "Professor não encontrado" });
+        res.status(404).send({ message: "Visão não encontrada" });
       }
     });
   };
